@@ -1,0 +1,122 @@
+/*
+Theme Name: Nome do Tema
+Theme URI: URL do Tema (opcional)
+Author: Nome do Autor
+Author URI: URL do Autor (opcional)
+Description: Descrição do Tema
+Version: 1.0
+License: Licença (ex: GPLv2 or later)
+License URI: URL da Licença
+Tags: palavras-chave do tema (opcional)
+Text Domain: identificador único (opcional)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #134279;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+main {
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.video-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+}
+
+.video-card .content {
+    padding: 15px;
+}
+
+.video-card .content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.video-card .content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.video-card .content a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #134279;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.video-card .content a:hover {
+    background-color: #c217d1;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .video-card .content h3 {
+        font-size: 1.2rem;
+    }
+
+    .video-card .content p {
+        font-size: 0.9rem;
+    }
+}
